@@ -26,10 +26,10 @@ function PlaceCardItem({ place }) {
             <Link to={'https://www.google.com/maps/search/?api=1&query=' + place?.placeName + "," + place?.geoCoordinates} target='_blank'>
                 <div className='my-4 bg-gray-50 p-2 gap-2 border rounded-lg flex flex-cols-2 hover:scale-105 transition-all hover:shadow-md cursor-pointer '>
                     <div className='py-2 mx-3'>
-                        <img src={photoUrl ? photoUrl : '/public/road-trip-vacation.jpg'} className='w-[140px] h-[140px] rounded-xl object-cover' />
+                        <img src={photoUrl ? photoUrl : '/road-trip-vocation.jpg'} className='w-[140px] h-[140px] rounded-xl object-cover' />
                     </div>
                     <div>
-                        <h2 className='font-medium text-sm text-orange-600'>{place.time}</h2>
+                        <h2 className='font-medium text-sm text-orange-600'>{place.day}</h2>
                         <h2 className='font-bold'>{place.placeName}</h2>
                         <p className='text-sm text-gray-500'>{place.placeDetails}</p>
                         <h2 className='text-blue-700 text-sm'>{place.ticketPricing}</h2>
